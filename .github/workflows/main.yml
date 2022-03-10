@@ -17,6 +17,8 @@ jobs:
         uses: docker/metadata-action@v3
         with:
           images: ghcr.io/${{ github.repository }}
+          flavor: |
+            latest=true
           tags: |
             type=edge,branch=main
             type=ref,event=branch
