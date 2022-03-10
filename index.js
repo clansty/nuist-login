@@ -1,9 +1,9 @@
 const axios = require('axios')
 
-const USERNAME = 'username'
-const PASSWORD = 'password'
+const USERNAME = process.env.USERNAME
+const PASSWORD = process.env.PASSWORD
 // 移动：2, 电信：3, 联通：4
-const OPERATOR = '3'
+const OPERATOR = process.env.OPERATOR
 
 // 检测网络是否连接
 const isConnected = async () => {

@@ -1,0 +1,10 @@
+version: "3.8"
+services:
+  login:
+    image: ghcr.io/clansty/nuist-login
+    container_name: nuist_login
+    environment:
+      - USERNAME=18912345678
+      - PASSWORD=123789
+      - OPERATOR=3
+    restart: unless-stopped
